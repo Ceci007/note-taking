@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Note Taking App</title>
+</head>
+<body>
+    <form id = "form_post">
+        <fieldset>
+            <label>Create Note</label><br />
+            <textarea id = "notePost" name="note" cols="30" rows="10" placeholder = "post a note"></textarea>
+            <br />
+            <button id = "postButton" name = "postButton" method = "POST">CREATE NOTE</button>
+        </fieldset>
+    </form>
+
+    <form id = "form_put">
+        <fieldset>
+            <label>Edit Note</label><br />
+            <textarea id = "notePut" name="note" cols="30" rows="10" placeholder = "Edit a note"></textarea>
+            <br />
+            <label>Note id</label><br />
+            <input id = "noteId" type="text" name = "noteId" placeholder = "note id" /><br />
+            <button id = "putButton" name = "putButton" method = "PUT">EDIT NOTE</button>
+        </fieldset>
+    </form>
+
+    <form id = "form_delete">
+        <fieldset>
+            <label>Delete Note</label><br />
+            <label>Note id</label><br />
+            <input id = "noteId" type="text" name = "noteId" placeholder = "note id" /><br />
+            <button>DELETE NOTE</button>
+        </fieldset>
+    </form>
+
+    <form id = "form_search">
+        <fieldset>
+            <label>Search Note</label><br />
+            <input id = "noteId" type="text" name = "noteId" placeholder = "note id" /><br />
+            <button id = "searchButton" name = "searchButton" value = "submit" type = "submit">Submit</button>
+        </fieldset>
+    </form>
+
+    <div class = "border">
+        <h5>Notes in database:</h5>
+        <div id = "results"></div>
+    </div>
+
+    <script src = "./api.js"></script>
+</body>
+</html>

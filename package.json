@@ -1,0 +1,20 @@
+{
+  "name": "note-taking",
+  "version": "1.0.0",
+  "description": "note taking app",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "mongoose"
+  ],
+  "author": "Cecilia Benitez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.6.7"
+  }
+}
